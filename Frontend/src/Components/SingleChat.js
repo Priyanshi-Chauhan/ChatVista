@@ -20,7 +20,8 @@ import io from "socket.io-client";
 import ScrollableChat from "./ScrollableChat";
 import animationData from "../animations/animation.json";
 
-const ENDPOINT = "http://localhost:5000";
+// const ENDPOINT = "http://localhost:5000";
+const ENDPOINT = "https://chatvista-jcgr.onrender.com";
 // const ENDPOINT = "https://cheerful-peony-af0223.netlify.app/";
 var socket, selectedChatCompare;
 
