@@ -79,7 +79,7 @@ const io = require("socket.io")(server, {
   pingTimeout: 60000, // if  for 60 sec, the user doesn't send any message, it will close the connection in order to save the bandwidth
   cors: 
   {   // so that we dont have any cross origin errors while building our app
-        origin : "http://localhost:3000",
+        origin : "https://chatvista-jcgr.onrender.com",
   }
 });
 io.on("connection", (socket) => {
