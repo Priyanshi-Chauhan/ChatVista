@@ -14,7 +14,7 @@ if (user) {
 }, [history]); 
 
   return (
-    <div>
+    
       <Container maxW ="xl" centerContent>
         <Box
           display="flex"
@@ -27,7 +27,7 @@ if (user) {
           borderWidth="1px"
         >
           <Text fontSize="4xl" fontFamily="Work sans">
-            Talk-A-Tive
+            Chat Vista
           </Text>
         </Box>
         <Box bg="white" w="100%" p={4}>
@@ -47,7 +47,7 @@ if (user) {
           </Tabs>
         </Box>
       </Container>
-    </div>
+  
   );
 }
 

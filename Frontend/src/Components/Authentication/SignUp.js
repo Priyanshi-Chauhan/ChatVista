@@ -49,7 +49,8 @@ if(pic1.type === "image/jpeg" || pic1.type=== "image/png"){
    console.log('this is file upload error',err);
    setLoading(false);
 })
-} else {
+}
+else {
   addToast({
     title : "Please select an Image!",
     status : "warning", 
@@ -59,8 +60,7 @@ if(pic1.type === "image/jpeg" || pic1.type=== "image/png"){
   } )
   setLoading(false);
   return;
-}
-       }
+}}
 
  const submitHandler = async() => {
  setLoading(true);
@@ -94,7 +94,6 @@ const config = {
   }
 }
 const {data} =  await axios.post("/api/user" ,{name, email, password, pic} ,  config )
-                 // first parameter is api end point
 addToast({
   title : "Registration successful. You can login now", 
   status : "success", 
@@ -105,8 +104,7 @@ addToast({
 
 localStorage.setItem("userInfo" , JSON.stringify(data));
    setLoading(false);
-  //  history.push("/chats")  // defined in app.js file
- }
+   }
   catch (error){
     addToast({
       title: "Error Occured !",
